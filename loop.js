@@ -34,13 +34,24 @@ arr.forEach(function(navne){
 
  //2 2
 
- var band = ["disturbed","ffpd","atreyu","in flames"];
+/* var band = ["disturbed","ffpd","atreyu","in flames"];
  band.forEach(function(bands, arra)){
      console.log(bands + "har placeringen" arra);
  };
-
+*/
 
  //2 3
 
- var tal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+ var tal = [31, 62, 360, 14, 25, 420, 69, 8, 59, 1337];
+
+ tal.forEach(function(tallet, smindex) {
+     if(tal[smindex] !== tal[tal.length-1]){
+         if(tal[smindex] > tal[smindex+1]){
+             console.log("det næste nummer er "+tal[smindex+1]+" og det er IKKE størere end det nuværende nummer som er " +tallet+"");
+        }else{console.log("det næste nummer er "+tal[smindex+1]+" og det er størere end det nuværende nummer som er " +tallet+"");
+
+        }
+
+     }
+ });
  
